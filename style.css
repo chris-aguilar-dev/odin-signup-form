@@ -1,0 +1,164 @@
+/* Root */
+:root {
+    --main-background: #EAEAEA;
+    --secondary-background: #CBC5EA;
+}
+
+/* Universal */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Content */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(img/mountain-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aside-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3.6rem;
+    color: aliceblue;
+    margin-top: 20vh;
+}
+
+.aside-footer {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin-bottom: 10vh;
+}
+
+section {
+    height: 100vh;
+    width: 70vw;
+}
+
+.section-top {
+    height: 33vh;
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+.section-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-header h2 {
+    width: 80%;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 2.4rem;
+}
+
+.section-mid {
+    height: 37vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-background);
+}
+
+.section-form {
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    height: 100%;
+    padding: 30px 0 0;
+}
+
+fieldset {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-wrap: wrap;
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 20px;
+}
+
+legend {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+fieldset > div {
+    display: flex;
+    gap: 150px;
+}
+
+fieldset > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-bottom {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background);
+}
+
+.section-footer {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.section-footer button {
+    background-color: lawngreen;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+}
+
+.section-footer p {
+    font-size: 1.2rem;
+}
+
+/* Utilities */
+.italicize {
+    font-style: italic;
+}
